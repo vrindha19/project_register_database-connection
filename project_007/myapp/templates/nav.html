@@ -1,0 +1,84 @@
+
+
+
+
+<nav class="navbar navbar-inverse">
+                    
+    <div class="container-fluid">
+      
+      <div class="navbar-header">
+        <ul class="nav navbar-nav">
+            
+        <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="vegitables.html">Fresh vegitables</a></li>
+            <li><a href="fruits.product.html">Fresh Fruits</a></li>
+          </ul>
+        </li>  -->
+
+
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Category <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="{% url 'vegitables' %}">Fresh Vegetables</a></li>
+              <li><a href="{% url 'fruits' %}">Fresh Fruits</a></li>
+            </ul>
+          </li>
+          
+      </div>
+      <ul class="nav navbar-nav">
+        <!-- <li class="active"><a href="/">Home</a></li> -->
+
+        <li class="active"><a href="{% url 'home' %}">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Product <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="{% url 'add_product' %}">Add Product</a></li>
+            <li><a href="{% url 'view_product' %}">View product</a></li>
+
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Orders & Payment <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href=" {% url 'view_order' %}">View Orders</a></li>
+            <li><a href="{% url  'payment' %}">View Payments</a></li>
+            <!-- <li><a href="trackorder.html">Track order</a></li> -->
+          </ul>
+        </li> 
+        <!-- <li><a href="view customers.html">View Customers</a></li>    -->
+      </ul>
+      <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Cart <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <!-- <li><a href="wishlist.html">Wishlist</a></li> -->
+            <!-- <li><a href="singleproduct.html">Single Product</a></li> -->
+            <li><a href="{% url 'shopping_cart' %}">shopping Cart</a></li>
+            <li><a href="{% url 'about' %}">About</a></li> 
+            <li><a href="{% url 'contact' %}">Contact</a></li>   
+            <!-- <li><a href="checkout.html">Checkout</a></li> -->
+            <!-- <li><a href="blog-single.html">Blog</a></li> -->
+  
+  
+          </ul>
+          <!-- <li><a href="contact.html">Contact</a></li>    -->
+
+        </li>
+      </li> 
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li><a href="aboutpage.html">About</a></li>    -->
+  
+        <!-- <li><a href="adminpage.html"><span class="glyphicon glyphicon-user"></span> admin@gmail.com</a></li> -->
+        <!-- <li><a href="{% url 'register' %}"><span class="glyphicon glyphicon-log-in"></span> Sign in</a></li> -->
+        <li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> Sign in </a></li>
+
+        <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+
+      
+        
+
+           
+     
+      </ul>
+      
+    </div>
+    
+  </nav>
